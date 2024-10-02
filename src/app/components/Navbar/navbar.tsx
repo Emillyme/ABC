@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <>
-      <header className="bg-white border-b border-gray-300 p-4 px-10 flex justify-between itms-center">
+      <header className="bg-white border-b border-gray-300 p-4 px-10 flex justify-between items-center">
         <div className="flex items-center">
         <Link href="/">
               <Image 
