@@ -1,8 +1,13 @@
+"use client";
 import Image from "next/image";
-import logo from "/public/Logo.svg"; 
+import logo from "../../../../public/Logo.svg"; 
 import Link from "next/link"; 
 
-export default function Navbar() {
+interface NavbarProps {
+  showButton?: boolean; // Prop opcional
+}
+
+export default function Navbar({ showButton = true }: NavbarProps) {
   return (
     <>
       <header className="bg-white border-b border-gray-300 p-4 px-10 flex justify-between items-center">
@@ -17,9 +22,11 @@ export default function Navbar() {
         </Link>
         </div>
         <div className="flex items-center">
-          <button className="bg-btnazul text-white px-6 py-2 rounded font-bold hover:bg-btnazulhover">
-            Criar Evento
-          </button>
+          {showButton && ( // Exibe o botão apenas se showButton for true
+            <button className="bg-btnazul text-white px-6 py-2 rounded font-bold hover:bg-btnazulhover">
+              Criar Evento
+            </button>
+          )}
         </div>
       </header>
     </>

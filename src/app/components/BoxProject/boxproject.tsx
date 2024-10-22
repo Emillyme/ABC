@@ -1,7 +1,3 @@
-import Image from "next/image";
-import logo from "/public/Logo.svg";
-import Link from "next/link";
-
 type Props = {
   title: string
   area: string

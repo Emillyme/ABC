@@ -12,7 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'btnazul': '#4856EE',
-        'btnazulhover': '#2B36AF'
+        'btnazulhover': '#2B36AF',
+        'roxo': '#9F5DC6',
+        'cinzabasico': '#EDEDED'
       },
     },
   },
